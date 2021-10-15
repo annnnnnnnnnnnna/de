@@ -1,0 +1,37 @@
+
+.inputTable {
+  border-collapse: collapse;
+  border:1px solid #333;
+}
+
+
+.none {
+  width: 15px;
+  height: 15px;
+  font-size:60%;
+  padding:0px;
+  border:1px solid #ddd;
+}
+
+.cell {
+  width: 15px;
+  height: 15px;
+  font-size:60%;
+  padding:0px;
+  border:1px #000;
+  border-left:1px solid #000;
+  border-right:1px solid #000;
+}
+
+.stairsUp {
+  border-top: 1px dashed #000;
+}
+.noStairsUp {
+  border-top: 1px solid #000;
+}
+.stairsDown {
+  border-bottom: 1px dashed #000;
+}
+.noStairsDown {
+  border-bottom: 1px solid #000;
+}
