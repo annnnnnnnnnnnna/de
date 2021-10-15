@@ -10,20 +10,7 @@ const offsetZIdx = 1000;
 const strokeStyle = "rgba(0,0,0, 1)";
 const lineWidth = 1;
 
-data = [];
-
 function init() {
-    let xyzArr = new Array(fieldZ);
-    for (let z = 0; z < fieldZ; z++) {
-        let xyArr = new Array(fieldY);
-        for (let y = 0; y < fieldY; y++) {
-            let arr = new Array(fieldX).fill("");
-            xyArr[y] = arr;
-        }
-        xyzArr[z] = xyArr;
-    }
-    data = xyzArr;
-    data[0][50][50] = "00";
 
     let floor = document.getElementById('floor');
     for (let z = 0; z < fieldZ; z++) {
