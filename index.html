@@ -6,16 +6,22 @@
   <link rel="stylesheet" href="./css/de.css" />
 </head>
 <body onload="init()">
-  <label><input type="radio" name="mode" id="mode0" value="0" checked>クリックするたびに空とスペースが切り替わるモード</label>/
-  <label><input type="radio" name="mode" value="1">クリックするだけでは何も起きないモード</label>
+  <div style="height:50px;"></div>
   <table id="field"></table>
+  <div id="eventArea">
+    <label>イベント検索<select id="event" onchange="eventLoad()"></select></label><br>
+    <select id="eventList" size="5"style="width: 150px"></select>
+  </div>
+  <br>
+  <div id="dataArea">
   <input type="button" onclick="ip()" value="テキストエリアのJSONを読み込む">
   <input type="button" onclick="op()" value="メモリ内のデータをテキストエリアにJSONで出力">
   <br>
   <textarea id="data" cols="100" rows="3"></textarea>
-  <div id="positionArea" style="position: fixed; bottom:0px; left: 0px; z-index: 10000;">
-    <label><select id="floor" onchange="floorLoad()"></select>階</label>
-    <input type="text" id="pos"  style="width: 70px">
+  </div>
+  <div id="positionArea" style="position: fixed; top:0px; left: 0px; z-index: 10000;">
+    <label><select id="floor" onchange="floorLoad()" style="font-size:150%"></select>階</label>
+    <input type="text" id="pos"  style="width: 350px; font-size:150%">
   </div>
 </body>
 </html>
