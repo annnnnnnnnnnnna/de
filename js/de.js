@@ -170,6 +170,16 @@ function keydown(e){
         case 40: y++; break;
         case 37: x--; break;
         case 39: x++; break;
+        case 35:
+            flr.selectedIndex++;
+            if (flr.selectedIndex > fieldZ) flr.selectedIndex = fieldZ;
+            floorLoad();
+            return;
+        case 36:
+            flr.selectedIndex--;
+            if (flr.selectedIndex < 0) flr.selectedIndex = 0;
+            floorLoad();
+            return;
         default: break;
     }
     if (x < 0) x = 0;
